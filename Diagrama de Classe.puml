@@ -1,0 +1,39 @@
+@startuml
+class org.analyzer.Main {
++ {static} void main(String[])
+}
+
+class org.analyzer.git.Git {
++ {static} String[] simulateMerge(String,String)
++ {static} String[] verifyCommit(String)
+}
+
+class org.analyzer.model.Chunk {
+- String contentChunk
+- int startLine
+- int endLine
++ String getContentChunk()
++ int getEndLine()
++ int getStartLine()
++ void setContentChunk(String)
++ void setStartLine(int)
++ void setEndLine(int)
+}
+
+
+class org.analyzer.model.Merge {
+- String hash
+- String Base
+}
+
+class org.analyzer.model.ConflictsFile {
+- List<Chunk> chunkList
+- String fileName
++ void setChunkList(List<Chunk>)
++ void setFileName(String)
++ List<Chunk> getChunkList()
++ String getFileName()
+}
+
+
+@enduml
