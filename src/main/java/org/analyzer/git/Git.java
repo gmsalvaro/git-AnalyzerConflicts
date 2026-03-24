@@ -1,4 +1,4 @@
-package org.example.git;
+package org.analyzer.git;
 
 public class Git {
 

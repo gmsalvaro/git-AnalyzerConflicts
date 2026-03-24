@@ -1,4 +1,4 @@
-package org.example.model;
+package org.analyzer.model;
 
 public class Chunk {
     private String contentChunk;
